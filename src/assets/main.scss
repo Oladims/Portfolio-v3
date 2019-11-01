@@ -1,0 +1,58 @@
+$bkcolor: #111;
+$fontcolor: #ccc;
+$linkcolor: #fff;
+$accentColor: orange;
+$borderRadius: 4px;
+
+body {
+  background: $bkcolor;
+  color: $fontcolor;
+  line-height: 1.4;
+  font-size: 16px;
+}
+
+a,
+a:active,
+a:visited {
+  color: $linkcolor;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap; /* added line */
+}
+
+form {
+  width: 90%;
+  max-width: 600px;
+  margin: 100px auto;
+  input,
+  textarea {
+    width: 100%;
+    border: 1px solid #555;
+    background: #333;
+    padding: 4px;
+    border-radius: $borderRadius;
+  }
+}
+
+button {
+  padding: 8px 20px;
+  font-size: 14px;
+  background: $accentColor;
+  border: none;
+  border-radius: $borderRadius;
+  cursor: pointer;
+}
+
+label {
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+}
